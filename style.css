@@ -50,6 +50,7 @@ input[type="radio"] {
   width: 24px;
   height: 30px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .selector {
@@ -122,6 +123,11 @@ input[type="radio"] {
   padding: 15px 0 8px;
   line-height: 40px;
   box-shadow: 0 5px 0 0 hsl(28, 16%, 65%);
+  cursor: pointer;
+}
+
+.default-keys:active {
+  transform: translateY(4px);
 }
 
 .del {
