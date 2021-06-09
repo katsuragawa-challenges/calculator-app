@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   font-size: 32px;
   background-color: hsl(222, 26%, 31%);
   color: hsl(221, 14%, 31%);
-  user-select: none;
 }
 
 /* Calc and switch styles */
@@ -90,13 +90,13 @@ input[type="radio"] {
   width: 550px;
   margin: auto;
   border-radius: 10px;
-  user-select: text;
 }
 
 .display-content {
   padding-right: 20px;
   font-size: 46px;
   line-height: 2.5em;
+  user-select: text;
 }
 
 /* Keypad styles */
