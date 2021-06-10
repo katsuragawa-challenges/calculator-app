@@ -14,7 +14,7 @@ let operator = "";
 // setup event handlers
 const handleNumberClick = (e) => {
   console.log(`clicked ${e.target.innerText}`);
-  if (display.innerText[0] === "0") {
+  if (display.innerText === "0" && e.target.id !== "dot") {
     display.innerText = "";
   }
   const num = e.target.innerText;
@@ -27,7 +27,7 @@ const handleNumberClick = (e) => {
 
 const handleOperation = (e) => {
   operation = e.target.id;
-  if (display.innerText[0] !== "0") {
+  if (display.innerText !== "0") {
     firstNum = Number(display.innerText);
     console.log(`first number = ${firstNum}`);
     display.innerText = "0";
