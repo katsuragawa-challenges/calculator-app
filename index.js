@@ -5,8 +5,6 @@ const operatorKeys = document.querySelectorAll(".operator");
 const del = document.getElementById("del");
 const reset = document.getElementById("reset");
 const equal = document.getElementById("equal");
-console.log(window.matchMedia("(prefers-color-scheme: dark)"));
-document.documentElement.setAttribute('color-scheme', 'light');
 
 let firstNum = 0;
 let secondNum = 0;
@@ -83,3 +81,15 @@ operatorKeys.forEach((operator) =>
 del.addEventListener("click", handleDel);
 equal.addEventListener("click", handleResult);
 reset.addEventListener("click", handleReset);
+
+// change themes
+const handleTheme = (e) => {
+  console.log(e.target.id);
+  document.documentElement.setAttribute("color-scheme", e.target.id);
+};
+
+const themes = document.querySelectorAll("input");
+themes.forEach((theme) => {
+  theme.checked = window.matchMedia(`(prefers-color-scheme: ${theme.id}`).matches
+  theme.addEventListener("change", handleTheme);
+});

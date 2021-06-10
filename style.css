@@ -204,11 +204,11 @@ input[type="radio"] {
   transition: left 0.25s ease-in-out;
 }
 
-#theme2:checked ~ .selector {
+#light:checked ~ .selector {
   left: 29px;
 }
 
-#theme3:checked ~ .selector {
+#dim:checked ~ .selector {
   left: 54px;
 }
 
@@ -295,4 +295,16 @@ input[type="radio"] {
   background-color: var(--key-highlight-background);
   color: var(--text-equal);
   box-shadow: 0 5px 0 0 var(--key-highlight-shadow);
+}
+
+.attribution {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  user-select: text;
+  color: var(--text-display);
+}
+
+.attribution a {
+  color: var(--key-highlight-background);
 }
