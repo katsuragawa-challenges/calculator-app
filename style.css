@@ -1,6 +1,146 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
 
 * {
+  /* theme 1 */
+  --main-background-1: hsl(222, 26%, 31%);
+  --keypad-background-1: hsl(223, 31%, 20%);
+  --screen-background-1: hsl(224, 36%, 15%);
+  --key-default-background-1: hsl(30, 25%, 89%);
+  --key-default-shadow-1: hsl(28, 16%, 65%);
+  --key-reset-del-background-1: hsl(225, 21%, 49%);
+  --key-reset-del-shadow-1: hsl(224, 28%, 35%);
+  --key-highlight-background-1: hsl(6, 63%, 50%);
+  --key-highlight-shadow-1: hsl(6, 70%, 34%);
+  --text-display-1: hsl(0, 0%, 100%);
+  --text-keys-1: hsl(221, 14%, 31%);
+  --text-reset-del-1: hsl(0, 0%, 100%);
+  --text-equal-1: hsl(0, 0%, 100%);
+
+  /* theme 2 */
+  --main-background-2: hsl(0, 0%, 90%);
+  --keypad-background-2: hsl(0, 5%, 81%);
+  --screen-background-2: hsl(0, 0%, 93%);
+  --key-default-background-2: hsl(45, 7%, 89%);
+  --key-default-shadow-2: hsl(35, 11%, 61%);
+  --key-reset-del-background-2: hsl(185, 42%, 37%);
+  --key-reset-del-shadow-2: hsl(185, 58%, 25%);
+  --key-highlight-background-2: hsl(25, 98%, 40%);
+  --key-highlight-shadow-2: hsl(25, 99%, 27%);
+  --text-display-2: hsl(60, 10%, 19%);
+  --text-keys-2: hsl(60, 10%, 19%);
+  --text-reset-del-2: hsl(0, 0%, 100%);
+  --text-equal-2: hsl(0, 0%, 100%);
+
+  /* theme 3 */
+  --main-background-3: hsl(268, 75%, 9%);
+  --keypad-background-3: hsl(268, 71%, 12%);
+  --screen-background-3: hsl(268, 71%, 12%);
+  --key-default-background-3: hsl(268, 47%, 21%);
+  --key-default-shadow-3: hsl(290, 70%, 36%);
+  --key-reset-del-background-3: hsl(281, 89%, 26%);
+  --key-reset-del-shadow-3: hsl(285, 91%, 52%);
+  --key-highlight-background-3: hsl(176, 100%, 44%);
+  --key-highlight-shadow-3: hsl(177, 92%, 70%);
+  --text-display-3: hsl(52, 100%, 62%);
+  --text-keys-3: hsl(52, 100%, 62%);
+  --text-reset-del-3: hsl(0, 0%, 100%);
+  --text-equal-3: hsl(198, 20%, 13%);
+}
+
+:root {
+  /* default light theme */
+  color-scheme: light;
+
+  --main-background: var(--main-background-2);
+  --keypad-background: var(--keypad-background-2);
+  --screen-background: var(--screen-background-2);
+  --key-default-background: var(--key-default-background-2);
+  --key-default-shadow: var(--key-default-shadow-2);
+  --key-reset-del-background: var(--key-reset-del-background-2);
+  --key-reset-del-shadow: var(--key-reset-del-shadow-2);
+  --key-highlight-background: var(--key-highlight-background-2);
+  --key-highlight-shadow: var(--key-highlight-shadow-2);
+  --text-display: var(--text-display-2);
+  --text-keys: var(--text-keys-2);
+  --text-reset-del: var(--text-reset-del-2);
+  --text-equal: var(--text-equal-2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --main-background: var(--main-background-1);
+    --keypad-background: var(--keypad-background-1);
+    --screen-background: var(--screen-background-1);
+    --key-default-background: var(--key-default-background-1);
+    --key-default-shadow: var(--key-default-shadow-1);
+    --key-reset-del-background: var(--key-reset-del-background-1);
+    --key-reset-del-shadow: var(--key-reset-del-shadow-1);
+    --key-highlight-background: var(--key-highlight-background-1);
+    --key-highlight-shadow: var(--key-highlight-shadow-1);
+    --text-display: var(--text-display-1);
+    --text-keys: var(--text-keys-1);
+    --text-reset-del: var(--text-reset-del-1);
+    --text-equal: var(--text-equal-1);
+  }
+
+  [color-scheme="light"] {
+    color-scheme: light;
+
+    --main-background: var(--main-background-2);
+    --keypad-background: var(--keypad-background-2);
+    --screen-background: var(--screen-background-2);
+    --key-default-background: var(--key-default-background-2);
+    --key-default-shadow: var(--key-default-shadow-2);
+    --key-reset-del-background: var(--key-reset-del-background-2);
+    --key-reset-del-shadow: var(--key-reset-del-shadow-2);
+    --key-highlight-background: var(--key-highlight-background-2);
+    --key-highlight-shadow: var(--key-highlight-shadow-2);
+    --text-display: var(--text-display-2);
+    --text-keys: var(--text-keys-2);
+    --text-reset-del: var(--text-reset-del-2);
+    --text-equal: var(--text-equal-2);
+  }
+
+  [color-scheme="dark"] {
+    color-scheme: dark;
+
+    --main-background: var(--main-background-1);
+    --keypad-background: var(--keypad-background-1);
+    --screen-background: var(--screen-background-1);
+    --key-default-background: var(--key-default-background-1);
+    --key-default-shadow: var(--key-default-shadow-1);
+    --key-reset-del-background: var(--key-reset-del-background-1);
+    --key-reset-del-shadow: var(--key-reset-del-shadow-1);
+    --key-highlight-background: var(--key-highlight-background-1);
+    --key-highlight-shadow: var(--key-highlight-shadow-1);
+    --text-display: var(--text-display-1);
+    --text-keys: var(--text-keys-1);
+    --text-reset-del: var(--text-reset-del-1);
+    --text-equal: var(--text-equal-1);
+  }
+
+  [color-scheme="dim"] {
+    color-scheme: dark;
+
+    --main-background: var(--main-background-3);
+    --keypad-background: var(--keypad-background-3);
+    --screen-background: var(--screen-background-3);
+    --key-default-background: var(--key-default-background-3);
+    --key-default-shadow: var(--key-default-shadow-3);
+    --key-reset-del-background: var(--key-reset-del-background-3);
+    --key-reset-del-shadow: var(--key-reset-del-shadow-3);
+    --key-highlight-background: var(--key-highlight-background-3);
+    --key-highlight-shadow: var(--key-highlight-shadow-3);
+    --text-display: var(--text-display-3);
+    --text-keys: var(--text-keys-3);
+    --text-reset-del: var(--text-reset-del-3);
+    --text-equal: var(--text-equal-3);
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,15 +151,14 @@ body {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   font-size: 32px;
-  background-color: hsl(222, 26%, 31%);
-  color: hsl(221, 14%, 31%);
+  background-color: var(--main-background);
 }
 
 /* Calc and switch styles */
 .header {
   width: 550px;
   margin: 0 auto 20px;
-  color: white;
+  color: var(--text-display);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +176,7 @@ body {
 }
 
 .toggle {
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--keypad-background);
   border-radius: 30px;
   display: inline-block;
   position: relative;
@@ -58,7 +197,7 @@ input[type="radio"] {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--key-highlight-background);
   position: absolute;
   top: 5px;
   left: 5px;
@@ -77,15 +216,15 @@ input[type="radio"] {
   width: 550px;
   margin: 50px auto 5px;
   font-size: 12px;
-  color: white;
+  color: var(--text-display);
   text-align: end;
   letter-spacing: 8px;
 }
 
 /* Display styles */
 .display {
-  background-color: hsl(224, 36%, 15%);
-  color: white;
+  background-color: var(--screen-background);
+  color: var(--text-display);
   text-align: right;
   width: 550px;
   margin: auto;
@@ -102,7 +241,7 @@ input[type="radio"] {
 /* Keypad styles */
 
 .keys-container {
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--keypad-background);
   width: 550px;
   margin: 30px auto;
   border-radius: 15px;
@@ -120,11 +259,12 @@ input[type="radio"] {
 }
 
 .default-keys {
-  background-color: hsl(30, 25%, 89%);
+  background-color: var(--key-default-background);
+  color: var(--text-keys);
   border-radius: 8px;
   padding: 15px 0 8px;
   line-height: 40px;
-  box-shadow: 0 5px 0 0 hsl(28, 16%, 65%);
+  box-shadow: 0 5px 0 0 var(--key-default-shadow);
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
 }
@@ -134,25 +274,25 @@ input[type="radio"] {
 }
 
 .del {
-  background-color: hsl(225, 21%, 49%);
-  color: white;
+  background-color: var(--key-reset-del-background);
+  color: var(--text-reset-del);
   font-size: 24px;
   text-transform: uppercase;
-  box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
+  box-shadow: 0 5px 0 0 var(--key-reset-del-shadow);
 }
 
 .reset {
   grid-area: 5/1/6/3;
-  background-color: hsl(225, 21%, 49%);
-  color: white;
+  background-color: var(--key-reset-del-background);
+  color: var(--text-reset-del);
   font-size: 24px;
   text-transform: uppercase;
-  box-shadow: 0 5px 0 0 hsl(224, 28%, 35%);
+  box-shadow: 0 5px 0 0 var(--key-reset-del-shadow);
 }
 
 .equal {
   grid-area: 5/3/6/5;
-  background-color: hsl(6, 63%, 50%);
-  color: white;
-  box-shadow: 0 5px 0 0 hsl(6, 70%, 34%);
+  background-color: var(--key-highlight-background);
+  color: var(--text-equal);
+  box-shadow: 0 5px 0 0 var(--key-highlight-shadow);
 }

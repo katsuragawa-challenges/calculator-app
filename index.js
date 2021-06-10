@@ -5,6 +5,8 @@ const operatorKeys = document.querySelectorAll(".operator");
 const del = document.getElementById("del");
 const reset = document.getElementById("reset");
 const equal = document.getElementById("equal");
+console.log(window.matchMedia("(prefers-color-scheme: dark)"));
+document.documentElement.setAttribute('color-scheme', 'light');
 
 let firstNum = 0;
 let secondNum = 0;
