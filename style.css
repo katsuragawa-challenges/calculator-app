@@ -73,7 +73,7 @@ input[type="radio"] {
   left: 54px;
 }
 
-.number {
+.switch-number {
   width: 550px;
   margin: 50px auto 5px;
   font-size: 12px;

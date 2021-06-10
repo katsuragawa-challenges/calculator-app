@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <script src="index.js"></script>
 
   <title>Katsuragawa's Calculator</title>
 
@@ -29,11 +28,14 @@
 </head>
 
 <body>
-  <div class="number">
+
+  <div class="switch-number">
     <span>1</span>
     <span>2</span>
     <span>3</span>
   </div>
+
+
   <div class="header">
 
     <div class="title">
@@ -61,58 +63,58 @@
 
   <div class="display">
     <div class="display-content">
-      399,999
+      0
     </div>
   </div>
 
   <div class="keys-container">
     <div class="keys-grid">
-      <div class="default-keys" id="7">
+      <div class="default-keys number">
         7
       </div>
-      <div class="default-keys" id="8">
+      <div class="default-keys number">
         8
       </div>
-      <div class="default-keys" id="9">
+      <div class="default-keys number">
         9
       </div>
       <div class="default-keys del" id="del">
         del
       </div>
-      <div class="default-keys" id="4">
+      <div class="default-keys number">
         4
       </div>
-      <div class="default-keys" id="5">
+      <div class="default-keys number">
         5
       </div>
-      <div class="default-keys" id="6">
+      <div class="default-keys number">
         6
       </div>
-      <div class="default-keys" id="plus">
+      <div class="default-keys operator" id="plus">
         +
       </div>
-      <div class="default-keys" id="1">
+      <div class="default-keys number">
         1
       </div>
-      <div class="default-keys" id="2">
+      <div class="default-keys number">
         2
       </div>
-      <div class="default-keys" id="3">
+      <div class="default-keys number">
         3
       </div>
-      <div class="default-keys" id="minus">
+      <div class="default-keys operator" id="minus">
         -
       </div>
       <div class="default-keys" id="dot">
         .
       </div>
-      <div class="default-keys" id="0">
+      <div class="default-keys number">
         0
       </div>
-      <div class="default-keys" id="divide">
+      <div class="default-keys operator" id="divide">
         /
       </div>
-      <div class="default-keys" id="multiply">
+      <div class="default-keys operator" id="multiply">
         x
       </div>
       <div class="default-keys reset" id="reset">
@@ -129,6 +131,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/katsuragawaa">Katsuragawa</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
